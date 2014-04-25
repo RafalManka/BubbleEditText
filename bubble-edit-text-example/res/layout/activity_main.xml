@@ -15,12 +15,12 @@
         android:layout_height="0dp"
         android:layout_weight="1" />
 
-    <pl.weblify.bubble_edit_text.BubbleEditText
+    <pl.rafalmanka.bubble_edit_text.BubbleEditText
         android:id="@+id/editText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" >
 
         <requestFocus />
-    </pl.weblify.bubble_edit_text.BubbleEditText>
+    </pl.rafalmanka.bubble_edit_text.BubbleEditText>
 
 </LinearLayout>

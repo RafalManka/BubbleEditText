@@ -1,8 +1,9 @@
 package pl.weblify.bubble_edit_text.example;
 
-import pl.weblify.bubble_edit_text.BubbleEditText;
-import pl.weblify.bubble_edit_text.Hyperlink;
-import pl.weblify.bubble_edit_text.OnBubbleClickListener;
+import pl.rafalmanka.bubble_edit_text.BubbleEditText;
+import pl.rafalmanka.bubble_edit_text.Hyperlink;
+import pl.rafalmanka.bubble_edit_text.OnBubbleClickListener;
+import pl.rafalmanka.bubble_edit_text.example.R;
 import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
@@ -33,11 +34,11 @@ public class MainActivity extends Activity {
 		// we want to get a callback when user clicks on a bubble
 		mBubbleEditText.setOnBubbleClickListener(new MyOnBubbleClickListener());
 		// this sets weather bubble will have this x icon at the right edge
-		mBubbleEditText.setRemoveIcon(true);
+		mBubbleEditText.setBubbleDrawableRight(android.R.drawable.presence_offline); 
 
 	}
 
-	private void setupListView() {
+	private void setupListView() { 
 		// set adapter to listview
 		mListView.setAdapter(getAdapter());
 		// we will listen to what the user selects from listview
